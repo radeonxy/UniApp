@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles_inst.css') }}">
+</head>
+<body>
+    <h1>Student Information</h1>
+
+    <form method="post">
+        <label for="search_query">Search:</label>
+        <input type="text" id="search_query" name="search_query">
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>All Students</h2>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Username</th>
+            <th>Major</th>
+            <th>Phone Number</th>
+            <th>Registration Date</th>
+        </tr>
+        {% for student in all_students %}
+        <tr>
+            <td>{{ student[0] }}</td>
+            <td>{{ student[1] }}</td>
+            <td>{{ student[2] }}</td>
+            <td>{{ student[3] }}</td>
+            <td>{{ student[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% if search_result %}
+    <h2>Search Results</h2>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Username</th>
+            <th>Major</th>
+            <th>Phone Number</th>
+            <th>Registration Date</th>
+        </tr>
+        {% for student in search_result %}
+        <tr>
+            <td>{{ student[0] }}</td>
+            <td>{{ student[1] }}</td>
+            <td>{{ student[2] }}</td>
+            <td>{{ student[3] }}</td>
+            <td>{{ student[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>

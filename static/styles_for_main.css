@@ -1,0 +1,161 @@
+label {
+       font-size: 22px;
+       color: #333;
+       text-align: center;
+       font-family: Calibri, Arial, sans-serif;
+       border-radius: 35px
+      }
+
+input[type="text"], input[type="password"]
+ {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+ }
+
+form {text-align: center;}
+
+input[type="submit"] {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 35px;
+  font-family: Calibri, Arial, sans-serif;
+  font-size:18px;
+ }
+
+input {
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 2px 0px;
+    border-radius: 10px;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 19px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+textarea{
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+}
+
+.content-container {
+    backdrop-filter: blur(20px);
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+    color: white; /* Set text color to white or any contrasting color */
+}
+
+
+body{
+     background-image: url('pictures/aul4.jpg');
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     margin: 0;
+     background-color: #f0f0f0;
+     font-family: Calibri, Arial, sans-serif;
+    }
+
+table, th, td
+ {
+  font-size: 20px;
+  border: 2px solid;
+  border-collapse: collapse;
+  width: 10%;
+  text-align: center;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+ }
+
+h1 {
+    font-size: 34px;
+    color: #fce6ca;
+    text-align: center;
+    font-family: Calibri, Arial, sans-serif;
+   }
+
+p {
+   font-size: 23px;
+   color: #fce6ca;
+   text-align: center;
+   font-family: Calibri, Arial, sans-serif;
+  }
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    background-color: rgba(170, 100, 38, 0.4);
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin: 0 auto;
+    font-family: Calibri, Arial, sans-serif;
+  }
+
+.button:hover {
+            background-color: rgba(190, 130, 60, 0.9);
+              }
+
+.or {
+    color: #333;
+    margin: 0 10px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.ribbon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #b58b57;
+    color: #222;
+    padding: 20px;
+    text-align: center;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 24px;
+}
+
+
+footer {
+    padding: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icon {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .social-icon img {
+      width: 35px;
+      height: 35px;
+    }

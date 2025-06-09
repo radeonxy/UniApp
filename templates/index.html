@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <div class="ribbon">FALL23333 CCE Senior Project Faculty of Engineering - AUL</div>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles_for_main.css') }}">
+ </head>
+<body>
+ <div class="ribbon">FALL23 CCE Senior Project Faculty of Engineering - AUL</div>
+  <div class="content-container">
+    <h1>Welcome to AUL - Jadra campus</h1>
+    <p>If you are an old student click Login
+        <br>If you are a new student click register</br>
+    </p>
+    {% if 'username' in session %}
+        <p style="font-weight: bold;">Logged in as {{session['username'] }}</p>
+        <a href="/logout" class="button">Logout</a>
+    {% else %}
+        <a href="/login" class="button">Login</a> <br></br>
+        <a href="/register" class="button">Register</a><br></br>
+        <a href="/instructor_section" class="button">Instructor section</a><br></br>
+        <a href="/carousel" class="button">About AUL</a><br></br>
+
+    {% endif %}
+
+</body>
+
+ <footer>
+    <div class="social-icons">
+      <div class="social-icon" onclick="redirectTo('https://www.facebook.com/AULLebanon/')">
+        <img src="static/pictures/fb_logo.png" alt="Facebook">
+      </div>
+      <div class="social-icon" onclick="redirectTo('https://twitter.com/aul_lebanon')">
+        <img src="static/pictures/x.png" alt="Twitter">
+      </div>
+      <div class="social-icon" onclick="redirectTo('https://www.instagram.com/aul_lebanon')">
+        <img src="static/pictures/instagram.png" alt="Instagram">
+      </div>
+    </div>
+    </div>
+     <script>
+    function redirectTo(url) {
+      console.log('Redirecting to:', url);
+      window.location.href = url;
+    }
+  </script>
+  </footer>
+<script>
+window.embeddedChatbotConfig = {
+chatbotId: "4bU9lMsEhQbZJkU_jH1bQ",
+domain: "www.chatbase.co"
+}
+<script>
+window.embeddedChatbotConfig = {
+chatbotId: "zLjG9Zb76aj9Z8UGx_WGk",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="zLjG9Zb76aj9Z8UGx_WGk"
+domain="www.chatbase.co"
+defer>
+</script>
+ </html>

@@ -1,0 +1,169 @@
+label {
+       font-size: 22px;
+       color: #e6dcc1;
+       text-align: center;
+       font-family: Calibri, Arial, sans-serif;
+       border-radius: 35px
+      }
+
+input[type="text"], input[type="password"]
+ {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+ }
+
+form {text-align: center;}
+
+input[type="submit"]:hover {
+    background-color: rgba(145, 0, 255, 0.2);
+        }
+
+ input[type="submit"]
+ {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(145, 198, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 35px;
+  font-family: Calibri, Arial, sans-serif;
+  font-size:18px;
+ }
+
+input {
+    text-decoration: none;
+    color: #e6dcc1;
+    background-color: rgba(145, 198, 255, 0.2);
+    padding: 2px 0px;
+    border-radius: 30px;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 22px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.content-container {
+            /*background-color: rgba(145, 198, 255, 0.6); /* Adjust the color and opacity */
+
+    backdrop-filter: blur(10px);
+            border: 2px solid #000; /* Border color and width */
+            border-radius: 20px; /* Border radius for rounded corners */
+            padding: 20px; /* Adjust the padding for inner content spacing */
+            margin: 20px; /* Adjust margin for outer spacing */
+            text-align: center;
+        }
+
+body{
+     background-image: url('pictures/students_bgd.jpg');
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     margin: 0;
+     background-color: #f0f0f0;
+     font-family: Calibri, Arial, sans-serif;
+    }
+
+table, th, td
+ {
+  font-size: 20px;
+  border: 2px solid;
+  border-collapse: collapse;
+  width: 10%;
+  text-align: center;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+ }
+
+h1 {
+    font-size: 34px;
+    color: #e6dcc1;
+    text-align: center;
+    font-family: Calibri, Arial, sans-serif;
+   }
+
+h2 {
+    font-size: 20px;
+    color: #e6dcc1;
+    text-align: center;
+    font-family: Calibri, Arial, sans-serif;
+   }
+
+p {
+   font-weight: bold;
+   font-size: 22px;
+   color: #e6dcc1;
+   text-align: center;
+   font-family: Calibri, Arial, sans-serif;
+  }
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: #e6dcc1;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin: 0 auto;
+    font-family: Calibri, Arial, sans-serif;
+  }
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    background-color: inherit;
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin: 0 auto;
+    font-family: Calibri, Arial, sans-serif;
+        }
+
+.button:hover {
+    background-color: rgba(145, 198, 255, 0.2);
+        }
+
+
+
+button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin: 0 auto;
+    font-family: Calibri, Arial, sans-serif;
+       }
+
+.or {
+    color: #333;
+    margin: 0 10px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.ribbon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 24px;
+}
+

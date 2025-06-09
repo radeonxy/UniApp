@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="ribbon">FALL23 CCE Senior Project Faculty of Engineering - AUL</div>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles_user.css') }}">
+    <div class="content-container">
+        <h1>Register</h1>
+        <h2>Please enter your details</h2>
+        <form method="POST">
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Register" class="button">
+        </form>
+        <br>
+        <a href="/" class="button">Go back</a>
+    </div>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,33 @@
+ <div class="ribbon">FALL23 CCE Senior Project Faculty of Engineering - AUL</div>
+            <link rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}">
+            <h2>Student Data</h2>
+            <table>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Fees</th>
+                    <th>Total</th>
+                </tr>
+                {% for course_name, credits, fees, total in student_data %}
+                <tr>
+                    <td>{{ course_name }}</td>
+                    <td>{{ credits }}</td>
+                    <td>{{ fees }}</td>
+                    <td>{{ total }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <a href="/dashboard">Go back</a>
+
+<script>
+window.embeddedChatbotConfig = {
+chatbotId: "zLjG9Zb76aj9Z8UGx_WGk",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="zLjG9Zb76aj9Z8UGx_WGk"
+domain="www.chatbase.co"
+defer>
+</script>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    /* Style for the anchor button */
+.button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #007bff; /* Border color */
+  color: #007bff; /* Text color */
+  background-color: #fff; /* Background color */
+  border-radius: 5px; /* Border radius for rounded corners */
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition effect */
+}
+
+/* Hover effect for the anchor button */
+.button:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Additional styles for different states (optional) */
+.button:active {
+  background-color: #0056b3; /* Background color when button is clicked */
+  border-color: #0056b3; /* Border color when button is clicked */
+}
+
+
+    .ribbon {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-family: Calibri, Arial, sans-serif;
+      font-size: 24px;
+    }
+
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle; height: 500px; width: 50%; }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Position the "prev button" to the left */
+    .prev {
+      left: 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ribbon">FALL23 CCE Senior Project Faculty of Engineering - AUL</div>
+
+<div class="slideshow-container">
+  <br><br><br>
+
+  <script>
+window.embeddedChatbotConfig = {
+chatbotId: "4bU9lMsEhQbZJkU_jH1bQ",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="4bU9lMsEhQbZJkU_jH1bQ"
+domain="www.chatbase.co"
+defer>
+</script>
+
+  <div class="mySlides fade">
+    <img src="static/pictures/fah.png" style="width:100%">
+    <div class="text"><b>Faculty of Arts and Humanities</b><br>Where you can study Communication Arts, English or Education</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="static/pictures/foe.png" style="width:100%">
+    <div class="text"><b>Faculty Of Engineering</b><br>Where you can study Computer and Communication Engineering, Mechanical Engineering or Mechatronics</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="static/pictures/fos.png" style="width:100%">
+    <div class="text"><b>Faculty of Sciences and Fine Arts</b><br>Where you can study Computer Sciences, Fine Arts or Basic Sciences</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<div style="text-align:center">
+  <h4>
+    Contact us now by calling 1561 <br> Or by email: <a href="mailto:Info@aul.edu.lb">Info@aul.edu.lb</a>
+  </h4>
+  <a href="/dashboard" class="button">Go back</a>
+</div>
+
+
+<script>
+  let slideIndex = 1;
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+
+  showSlides(slideIndex); // Initial call to display the first slide
+</script>
+
+</body>
+</html>
